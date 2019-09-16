@@ -1,22 +1,22 @@
-const env = process.env.NODE_ENV; //环境变量
+const env = process.env.NODE_DEV; //环境变量
 
-let MYSQL_CONF;
+let MYSQL_CONF = {};
 if (env === 'dev') {
     MYSQL_CONF = {
         host: 'localhost',
         user: 'root',
-        password: 'rootroot',
+        password: 'sunliquan',
         port: '3306',
-        database: 'myblogs'
+        database: 'myblog'
     }
 }
 if (env === 'production') {
     MYSQL_CONF = {
         host: 'localhost',
         user: 'root',
-        password: 'rootroot',
+        password: 'sunliquan',
         port: '3306',
-        database: 'myblogs'
+        database: 'myblog'
     }
 }
 
